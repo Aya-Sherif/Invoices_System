@@ -12,6 +12,7 @@ class PaymentController extends Controller
     // Display the form to make a payment for an invoice
     public function createPaymentForm(string $invoiceId)
     {
+
         // dd($invoiceId);
         $invoice = Invoice::findOrFail($invoiceId);
         return view('admin.payments.create', compact('invoice'));

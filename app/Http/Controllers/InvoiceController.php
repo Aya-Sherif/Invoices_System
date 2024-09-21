@@ -227,7 +227,6 @@ class InvoiceController extends Controller
         $items = [];
         $existancItems = InvoiceItems::where('invoice_id', $id)->get();
         foreach ($existancItems as $index => $item) {
-            // dd($item->product);
             $product = Product::findOrFail($item->product->product_id);
             $price_after_discount = $item->price - $item->price * ($item->discount) / 100;
             // dd($item);
@@ -293,7 +292,7 @@ class InvoiceController extends Controller
             $this->createInvoiceItems($request->input('items'), $invoice->id);
 
             DB::commit();
-            return redirect(route('invoice.index'))->with('Success', 'لقد تم إرساله الفاتوره بنجاح الى المخزن');
+            return redirect(route('payments.create',$invoice->id))->with('Success', 'لقد تم إرساله الفاتوره بنجاح الى المخزن');
         } catch (\Exception $e) {
             DB::rollback();
             return redirect()->back()->withErrors(['error' => 'An error occurred: ' . $e->getMessage()])->withInput();
@@ -314,12 +313,6 @@ class InvoiceController extends Controller
                 throw new \Exception('Product not found for item name: ' . $item['name']);
             }
 
-            $productDetails = ProductSize::findOrFail($item['id']);
-            // if($item['quantity']<$productDetails->quantity)
-            // {
-            //     throw new \Exception('الكميه المجموده من المنتج' . $item['name']."غير كافيه");
-            // }
-
             InvoiceItems::create([
                 'invoice_id' => $invoiceId,
                 'product_size_id' => $item['id'],
@@ -329,6 +322,7 @@ class InvoiceController extends Controller
                 'discount' => $item['discount'],
                 'total' => $item['price_after_discount'] * $item['quantity'],
             ]);
+            $productDetails = ProductSize::findOrFail($item['id']);
             $productDetails->quantity = $productDetails->quantity - $item['quantity'];
             $productDetails->save();  // Save the changes
 

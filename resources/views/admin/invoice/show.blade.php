@@ -1,7 +1,6 @@
 @extends('layouts.lay')
 @section('content')
     <!--Start Main content container-->
-
     <style>
         @media print {
             @page {
@@ -75,8 +74,6 @@
             </div>
             <div class="page_content">
                 <h1 class="heading_title">ملخص الفاتوره</h1>
-                @include('layouts.message')
-
 
 
                 <div class="inv-header">
@@ -93,7 +90,7 @@
                             @if (isset($invoice))
                                 <td>{{ $invoice['invoice_date'] }}</td>
                             @else
-                                <td>{{ $newinvoice['date'] }}
+                                <td>{{ $newinvoice['date']}}
                                 </td>
                             @endif
                         </tr>

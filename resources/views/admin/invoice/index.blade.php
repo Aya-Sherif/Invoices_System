@@ -34,11 +34,11 @@
                                 <select name="filter_status" id="filter_status" class="form-control">
                                     <option value="">كل الحالات</option>
                                     <option value="shipped" {{ request('filter_status') == 'shipped' ? 'selected' : '' }}>
-                                        شحن</option>
-                                    <option value="draft" {{ request('filter_status') == 'draft' ? 'selected' : '' }}>مسودة
+                                        تم التسليم</option>
+                                    <option value="draft" {{ request('filter_status') == 'draft' ? 'selected' : '' }}>قيد التنفيذ
                                     </option>
                                     <option value="approved" {{ request('filter_status') == 'approved' ? 'selected' : '' }}>
-                                        موافقة</option>
+                                        تم التأكيد</option>
                                 </select>
                             </div>
 
@@ -97,8 +97,10 @@
                                     status-draft
                                 @elseif ($item->status == 'approved')
                                     status-approved @endif">
-                                    {{ $item->status }}
-                                </td>
+                                    @if ($item->status == 'shipped') تم التسليم
+                                    @elseif ($item->status == 'draft')
+قيد التنفيذ                                    @elseif ($item->status == 'approved')
+                                        تم التأكيد @endif                                </td>
                                 <td>
                                     @if ((auth()->user()->role == 'admin' || auth()->user()->role == 'accounts') && $item->status == 'draft')
                                             <a href="{{ route('invoice.edit', $item->id) }}"

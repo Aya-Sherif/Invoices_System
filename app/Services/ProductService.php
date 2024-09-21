@@ -48,12 +48,13 @@ class ProductService
     /**
      * Get sizes for a specific product.
      */
-    public function getSizesByProductId(string $productId)
+    public function getSizesByProductId(int $productId)
     {
         return ProductSize::where('product_id', $productId)
-        ->where('quantity', '!=', 0) // Check that quantity is not equal to zero
-        ->get(['id', 'size']);
-        }
+            ->whereNotNull('quantity') // Ensure quantity is not null
+            ->where('quantity', '!=', 0) // Check that quantity is not equal to zero
+            ->get(['id', 'size']);
+    }
 
     /**
      * Prepare product data for creation, including the image handling.
