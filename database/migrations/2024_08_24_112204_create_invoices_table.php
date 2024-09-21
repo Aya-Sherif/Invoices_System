@@ -14,9 +14,12 @@ return new class extends Migration
         Schema::create('invoices', function (Blueprint $table) {
             $table->id();
             $table->foreignId('client_id')->constrained()->onDelete('cascade');
+            $table->string('invoice_identifier')->unique(); //
+
             $table->date('invoice_date');
             $table->decimal('total_before_discount', 10, 2);
             $table->decimal('total_after_discount', 10, 2);
+            $table->decimal('paid', 10, 2);
             $table->enum('status', ['draft', 'approved', 'shipped'])->default('draft'); 
             $table->timestamps();
         });
