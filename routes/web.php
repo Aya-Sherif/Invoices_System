@@ -3,6 +3,7 @@
 use App\Http\Controllers\AccountsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\Front\FrontController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\PaymentController;
@@ -16,6 +17,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Middleware\RoleMiddleware;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
+
 
 
 
@@ -37,6 +39,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth', 'verified', 'is_admin'])->group(function () {
     Route::resource('admin/users', AdminController::class);
     Route::resource('user', UserController::class);
+    Route::get('/contacts', [ContactController::class, 'index'])->name('contacts.index');
+
 });
 Route::get('/', function () {
     return view('dashboard');
@@ -72,6 +76,7 @@ Route::middleware(['auth', 'verified', 'is_admin_or_stock'])->group(function () 
 });
 
 Route::get('/', [FrontController::class, 'index'])->name('home');
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 
 // // Accounts Routes

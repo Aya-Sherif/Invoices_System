@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="{{ asset('front') }}/css/style.css">
   <link rel="stylesheet" href="{{ asset('front') }}/css/media.css">
 
+
   <title>smart_plast</title>
 </head>
 

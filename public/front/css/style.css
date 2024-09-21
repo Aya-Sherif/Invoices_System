@@ -223,3 +223,51 @@ h2{
         margin-bottom: 20px;
     }
 }
+
+/* Styling for the input fields */
+form input,
+form textarea {
+    font-family: 'Tajawal', sans-serif; /* Adding an Arabic-friendly font */
+    text-align: right; /* Ensure the text is aligned to the right for RTL */
+}
+
+/* Making sure the submit button looks nice */
+form button {
+    background-color: #00b3b3; /* Custom button color */
+    border: none;
+    border-radius: 25px; /* Rounded corners */
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #008f8f;
+}
+
+/* Placeholder styling */
+::placeholder {
+    color: #6c757d; /* Slightly muted color for placeholder text */
+    opacity: 1; /* Ensuring it's not transparent */
+}
+
+form textarea {
+    resize: none; /* Disable resizing */
+    border-radius: 10px; /* Slightly rounded corners for the textarea */
+}
+
+/* Ensuring good spacing */
+form .form-control {
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+}
+
+/* Form responsiveness for mobile */
+@media (max-width: 768px) {
+    form {
+        padding: 10px;
+    }
+
+    form .col-md-6 {
+        width: 100%;
+    }
+}

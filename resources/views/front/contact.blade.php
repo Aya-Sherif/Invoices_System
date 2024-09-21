@@ -1,3 +1,4 @@
+
 <section id="contact" class="py-5">
     <div class="heading text-center">
       <h2><span class="fw-bold">تواصل معنا </span> </h2>
@@ -29,29 +30,34 @@
               
         </div>
       </div>
-      <form class="row g-3 text-end">
+
+    
+   
+      <form class="row g-3 text-end" method="POST" action="{{ route('contact.store') }}">
+        @csrf
         <div class="col-md-6">
-
-          <input type="text" class="form-control" id="inputEmail4" placeholder="الأسم ">
+            <input type="text" class="form-control" name="name" placeholder="الأسم" required>
         </div>
         <div class="col-md-6">
-
-          <input type="number" class="form-control" id="inputPassword4" placeholder="رقم الهاتف">
+            <input type="text" class="form-control" name="phone" placeholder="رقم الهاتف" required>
         </div>
         <div class="col-12">
-          <input type="text" class="form-control" id="inputAddress" placeholder="الموضوع ">
+            <input type="text" class="form-control" name="subject" placeholder="الموضوع" required>
         </div>
         <div class="col-12">
-          <div class="form-floating">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
-              style="height: 100px"></textarea>
-            <label for="floatingTextarea2" class="text-muted">الرسالة</label>
-          </div>
+            <div class="form-floating">
+                <textarea class="form-control" name="message" style="height: 100px" required></textarea>
+                <label for="floatingTextarea2" class="text-muted">الرسالة</label>
+            </div>
         </div>
-
         <div class="col-12">
-          <button type="submit" class=" d-block ms-auto btn text-white px-4 py-2">إرسال </button>
+            <button type="submit" class="d-block ms-auto btn text-white px-4 py-2">إرسال</button>
         </div>
-      </form>
+    </form>
+    
+    
+    
+    
+    
     </div>
   </section>
