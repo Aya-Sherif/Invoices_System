@@ -1,0 +1,35 @@
+@media screen and (max-width : 700px) {
+    h1{
+        font-size: 50px;
+        width: 100% !important;
+    }
+    .content{
+        width: 100% !important;
+
+    }
+    
+}
+
+@media screen and (max-width : 980px) {
+    h1{
+        font-size: 80px;
+        width: 100% !important;
+    }
+    .content{
+        width: 100% !important;
+
+    }
+}
+
+
+@media screen and (max-width :350px) {
+
+    h1{
+        font-size: px;
+        width: 100% !important;
+    }
+    .content{
+        width: 100% !important;
+
+    }
+}

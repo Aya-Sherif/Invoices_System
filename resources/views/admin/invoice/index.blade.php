@@ -35,7 +35,8 @@
                                     <option value="">كل الحالات</option>
                                     <option value="shipped" {{ request('filter_status') == 'shipped' ? 'selected' : '' }}>
                                         تم التسليم</option>
-                                    <option value="draft" {{ request('filter_status') == 'draft' ? 'selected' : '' }}>قيد التنفيذ
+                                    <option value="draft" {{ request('filter_status') == 'draft' ? 'selected' : '' }}>قيد
+                                        التنفيذ
                                     </option>
                                     <option value="approved" {{ request('filter_status') == 'approved' ? 'selected' : '' }}>
                                         تم التأكيد</option>
@@ -97,18 +98,21 @@
                                     status-draft
                                 @elseif ($item->status == 'approved')
                                     status-approved @endif">
-                                    @if ($item->status == 'shipped') تم التسليم
+                                    @if ($item->status == 'shipped')
+                                        تم التسليم
                                     @elseif ($item->status == 'draft')
-قيد التنفيذ                                    @elseif ($item->status == 'approved')
-                                        تم التأكيد @endif                                </td>
+                                        قيد التنفيذ
+                                    @elseif ($item->status == 'approved')
+                                        تم التأكيد
+                                    @endif
+                                </td>
                                 <td>
                                     @if ((auth()->user()->role == 'admin' || auth()->user()->role == 'accounts') && $item->status == 'draft')
-                                            <a href="{{ route('invoice.edit', $item->id) }}"
-                                                class="glyphicon glyphicon-pencil" data-toggle="tooltip"
-                                                data-placement="top" title="edit"></a>
-                                            <a href="javascript:void(0);" class="glyphicon glyphicon-ok"
-                                                data-toggle="tooltip" data-placement="top" title="Done"
-                                                onclick="event.preventDefault(); document.getElementById('change-state-form-{{ $item->invoice_identifier }}').submit();"></a>
+                                        <a href="{{ route('invoice.edit', $item->id) }}" class="glyphicon glyphicon-pencil"
+                                            data-toggle="tooltip" data-placement="top" title="edit"></a>
+                                        <a href="javascript:void(0);" class="glyphicon glyphicon-ok" data-toggle="tooltip"
+                                            data-placement="top" title="Done"
+                                            onclick="event.preventDefault(); document.getElementById('change-state-form-{{ $item->invoice_identifier }}').submit();"></a>
 
                                         <!-- Hidden form for change state action -->
                                         <form id="change-state-form-{{ $item->invoice_identifier }}"

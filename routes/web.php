@@ -3,6 +3,7 @@
 use App\Http\Controllers\AccountsController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\Front\FrontController;
 use App\Http\Controllers\InvoiceController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PrintController;
@@ -15,6 +16,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Middleware\RoleMiddleware;
 use App\Models\Product;
 use Illuminate\Support\Facades\Route;
+
 
 
 
@@ -69,6 +71,7 @@ Route::middleware(['auth', 'verified', 'is_admin_or_stock'])->group(function () 
     Route::Post('invoice/Complete/{id}', [InvoiceController::class, 'changeStateToShipped'])->name('invoice.changeState');
 });
 
+Route::get('/', [FrontController::class, 'index'])->name('home');
 
 
 // // Accounts Routes
