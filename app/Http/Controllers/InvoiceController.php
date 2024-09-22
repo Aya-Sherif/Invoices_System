@@ -263,6 +263,7 @@ class InvoiceController extends Controller
      */
     public function create()
     {
+        // dd(4);
         //
         $items = ProductSize::where('quantity', '!=', 0)->get();
         $clients = $this->getAllClients();
@@ -285,14 +286,23 @@ class InvoiceController extends Controller
         }
 
         $invoiceData = $this->prepareInvoiceData($request, $client->id);
-
+// dd($invoiceData);
         DB::beginTransaction();
         try {
             $invoice = Invoice::create($invoiceData);
             $this->createInvoiceItems($request->input('items'), $invoice->id);
-
+            
             DB::commit();
-            return redirect(route('payments.create',$invoice->id))->with('Success', 'لقد تم إرساله الفاتوره بنجاح الى المخزن');
+            // dd($invoice);
+            if($this->getUserRole()=='sales')
+            {
+                // dd(1);
+                return redirect('/invoice');
+
+            }else{
+
+                return redirect(route('payments.create',$invoice->id))->with('success', 'لقد تم إرساله الفاتوره بنجاح الى المخزن');
+            }
         } catch (\Exception $e) {
             DB::rollback();
             return redirect()->back()->withErrors(['error' => 'An error occurred: ' . $e->getMessage()])->withInput();
@@ -333,10 +343,10 @@ class InvoiceController extends Controller
     private function prepareInvoiceData(Request $request, $clientId)
     {
         $role = $this->getUserRole();
-
         if ($role === 'admin' || $role === 'accounts') {
             return $this->prepareAdminInvoiceData($request, $clientId);
         } elseif ($role === 'sales') {
+            // dd($role);
             return $this->prepareSalesInvoiceData($request, $clientId);
         } else {
             // Handle unexpected roles or return an error
