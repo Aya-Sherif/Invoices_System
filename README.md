@@ -16,12 +16,12 @@ This project is a **Laravel-based Invoice Management System** designed to help u
 
 ### Installation
 
-1. **Clone the repository**:
-   
-   ```bash
-(https://github.com/Aya-Sherif/Invoices_System.git)   
+1: **Clone the Repository**:
+```bash
+git clone https://github.com/Aya-Sherif/Invoices_System.git
 cd invoice-management-system
-   ```
+```
+
 2. **Install dependencies**:
    
    ```bash
