@@ -19,7 +19,6 @@ This project is a **Laravel-based Invoice Management System** designed to help u
 1. **Clone the repository**:
    
    ```bash
-[   git clone https://github.com/yourusername/invoice-management-system.git]
 (https://github.com/Aya-Sherif/Invoices_System.git)   
 cd invoice-management-system
    ```
