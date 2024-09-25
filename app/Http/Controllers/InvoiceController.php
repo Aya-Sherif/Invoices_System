@@ -121,15 +121,16 @@ class InvoiceController extends Controller
     }
     public function changeStateToApproved(string $id)
     {
+        // dd(1);
         // Retrieve a single invoice based on the invoice_identifier
         $invoice = Invoice::where('invoice_identifier', $id)->firstOrFail();
 
         // Update the status of the invoice
         $invoice->status = 'approved';
-
         // Save the changes
         $invoice->save();
-        return redirect(route('invoice.index'))->with('success', 'لقد تم صرف الفاتوره بنجاح');
+        // dd($invoice->status);
+        return redirect(route('payments.create',$invoice->id))->with('success', 'لقد تم ارسال الفاتوره بنجاح');
     }
 
 
@@ -291,7 +292,7 @@ class InvoiceController extends Controller
         try {
             $invoice = Invoice::create($invoiceData);
             $this->createInvoiceItems($request->input('items'), $invoice->id);
-            
+
             DB::commit();
             // dd($invoice);
             if($this->getUserRole()=='sales')

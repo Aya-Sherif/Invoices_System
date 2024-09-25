@@ -3,7 +3,7 @@
 
 @section('content')
     @include('front.about_us')
-    {{-- @include('front.portfolio') --}}
+    @include('front.company-message')
     @include('front.blog')
     @include('front.contact')
 @endsection
