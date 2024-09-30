@@ -42,24 +42,26 @@
             <ul class="navbar-nav m-auto  mb-lg-0">
 
 
-              <li class="nav-item me-4 text-end">
-                <a class="nav-link active" href="#">الصفحة الرئيسية </a>
-              </li>
+
+
+
+
 
               <li class="nav-item me-4 text-end">
-                <a class="nav-link" href="#about">من نحن ؟</a>
+                <a class="nav-link  " aria-current="page" href="#contact">تواصل معنا </a>
+              </li>
+              <li class="nav-item me-4 text-end">
+                <a class="nav-link" href="#blog">لماذا منتجنا</a>
               </li>
               <li class="nav-item me-4 text-end">
                 <a class="nav-link" href="#portfolio"> منتجاتنا</a> </a>
               </li>
               <li class="nav-item me-4 text-end">
-                <a class="nav-link" href="#blog">لماذا منتجنا</a>
+                <a class="nav-link" href="#about">من نحن ؟</a>
               </li>
-
               <li class="nav-item me-4 text-end">
-                <a class="nav-link  " aria-current="page" href="#contact">تواصل معنا </a>
+                <a class="nav-link " href="#">الصفحة الرئيسية </a>
               </li>
-
 
             </ul>
           </div>
