@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\InvoiceRequest;
 use App\Models\Client;
-use App\Models\invoice;
+use App\Models\Invoice;
 use App\Models\InvoiceItems;
 use App\Models\Product;
 use App\Models\ProductSize;
@@ -58,6 +58,7 @@ class InvoiceController extends Controller
     private function getFilteredInvoices($request)
     {
         $query = Invoice::query();
+        // dd($query);
         $flag = false;
         // Filter by date range
         if ($request->has('filter_date') && $request->filter_date) {
