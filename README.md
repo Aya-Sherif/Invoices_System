@@ -20,13 +20,14 @@ This project is a **Laravel-based Invoice Management System** designed to help u
 ## Features
 
 - **Invoice Creation and Management**: Easily create, update, and manage invoices for clients.
-  ![Invoice Images](https://github.com/Aya-Sherif/Invoices_System/blob/a5315e1bab2b737ae3c4baa6aa2464f1457da832/ReadMePhotos/NewInvoice.png)
-  ![Invoices Display](https://github.com/Aya-Sherif/Invoices_System/blob/a5315e1bab2b737ae3c4baa6aa2464f1457da832/ReadMePhotos/invoicesDisplay.png)
+  ![Invoice Images](https://github.com/Aya-Sherif/Invoices_System/blob/a5315e1bab2b737ae3c4baa6aa2464f1457da832/ReadMePhotos/NewInvoice.png) ![Invoices Display](https://github.com/Aya-Sherif/Invoices_System/blob/a5315e1bab2b737ae3c4baa6aa2464f1457da832/ReadMePhotos/invoicesDisplay.png)
 - **Partial Payments**: Manage partial payments and automatically update client balances.
   
 - **Role-based Access Control**: Admins have full access, while sales users can only view and manage invoices.
-  ![Accounts Feature](https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/accountsfeatures.png) ![Stock View](https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/StockView.png)
-![Sales Features](https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/sales-Feature.png)
+
+  <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/sales-Feature.png" alt="Invoice Management 1" style="width: 30%; margin-right: 10px; display: inline-block;">
+  <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/StockView.png)" alt="Invoice Management 2" style="width: 30%; margin-right: 10px; display: inline-block;">
+  <img src="[path-to-photo3.png](https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/accountsfeatures.png)" alt="Invoice Management 3" style="width: 30%; display: inline-block;">
 - **AJAX Dynamic Data Fetching**: Fetch client and product details dynamically while creating or editing invoices.`
 - **Print Functionality**: Print invoices with a click of a button.
   ![Print View](https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/PrintView.png)
