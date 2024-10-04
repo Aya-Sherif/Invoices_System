@@ -13,15 +13,16 @@ This project is a **Laravel-based Invoice Management System** designed to help u
 3. [Registering a User for Local Development](#registering-a-user-for-local-development)
 4. [Usage](#usage)
 5. [Technologies Used](#technologies-used)
-6. [Project Structure](#project-structure)
-7. [License](#license)
+6. [Screenshots](#screenshots)
+7. [Project Structure](#project-structure)
+8. [License](#license)
 
 ## Features
 
 - **Invoice Creation and Management**: Easily create, update, and manage invoices for clients.
 - **Partial Payments**: Manage partial payments and automatically update client balances.
 - **Role-based Access Control**: Admins have full access, while sales users can only view and manage invoices.
-- **AJAX Dynamic Data Fetching**: Fetch client and product details dynamically while creating or editing invoices.
+- **AJAX Dynamic Data Fetching**: Fetch client and product details dynamically while creating or editing invoices.`
 - **Print Functionality**: Print invoices with a click of a button.
 
 ## Installation
@@ -132,6 +133,12 @@ In the production environment, the register page is disabled, but if you're runn
 - `app/Http/Controllers`: Manages routes and core logic of the application.
 - `resources/views`: Contains Blade templates for the frontend design.
 - `database/migrations`: Handles database schema migration (without seeders).
+
+## Screenshots
+
+Here are some screenshots of the application:
+
+
 
 ## Contributing
 
