@@ -24,12 +24,12 @@ This project is a **Laravel-based Invoice Management System** designed to help u
 - **Partial Payments**: Manage partial payments and automatically update client balances.
   
 - **Role-based Access Control**: Admins have full access, while sales users can only view and manage invoices.
+  
+  <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/StockView.png" alt="Stock View" style="width: auto; margin-right: 10px;">
 
 <div style="display: flex; justify-content: space-between;">
 
   <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/sales-Feature.png" alt="Sales Feature" style="width: 30%; margin-right: 10px;">
-  
-  <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/StockView.png" alt="Stock View" style="width: 30%; margin-right: 10px;">
   
   <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/accountsfeatures.png" alt="Accounts Features" style="width: 30%;">
 
