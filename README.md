@@ -37,7 +37,7 @@ This project is a **Laravel-based Invoice Management System** designed to help u
 
 - **AJAX Dynamic Data Fetching**: Fetch client and product details dynamically while creating or editing invoices.`
 - **Print Functionality**: Print invoices with a click of a button.
-<img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/PrintView.png" alt="Print View" style="width: auto; height: 30%;">
+<img src="https://github.com/Aya-Sherif/Invoices_System/blob/195303d6807da3dab3aa083ce8b3532f45f33681/ReadMePhotos/PrintView.png" alt="Print View" style="width: auto; height: 30%;">
 
 ## Installation
 
