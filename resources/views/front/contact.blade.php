@@ -9,30 +9,30 @@
         <div class="col-lg-4">
           <i class="fa-solid fa-mobile-screen fs-2"></i>
           <h3 class="my-3 "> رقم الهاتف</h3>
-          <p>+2 010 60200036</p>
+          <p>+2 01060200036</p>
         </div>
         <div class="col-lg-4">
           <a href="https://mail.google.com/mail/u/0/#search/smartplast18%40gmail.com"><i class="fa-solid fa-envelope fs-2"></i></a>
-          
+
           <h3 class="my-3">الإيميل الخاص  </h3>
           <p>smartplast18@gmail.com
           </p>
         </div>
         <div class="col-lg-4">
-         
-          <a class="text-decoration-none" href="https://www.facebook.com/people/Smart-Plast/100083557320981/"> 
+
+          <a class="text-decoration-none" href="https://www.facebook.com/people/Smart-Plast/100083557320981/">
             <i class="fa-brands fa-square-facebook fs-1"></i>
           </a>
 
-           
-          <h3 class="my-3">صفحة الفيسبوك</h3>
-         <p>smart plast</p> 
-              
+
+          <h3 class="my-3" >صفحة الفيسبوك</h3>
+         <p>smart plast</p>
+
         </div>
       </div>
 
-    
-   
+
+
       <form class="row g-3 text-end" method="POST" action="{{ route('contact.store') }}">
         @csrf
         <div class="col-md-6">
@@ -54,10 +54,10 @@
             <button type="submit" class="d-block ms-auto btn text-white px-4 py-2">إرسال</button>
         </div>
     </form>
-    
-    
-    
-    
-    
+
+
+
+
+
     </div>
   </section>
