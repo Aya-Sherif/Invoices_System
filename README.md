@@ -25,13 +25,15 @@ This project is a **Laravel-based Invoice Management System** designed to help u
   
 - **Role-based Access Control**: Admins have full access, while sales users can only view and manage invoices.
 
-<img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/sales-Feature.png" alt="Invoice Management 1" style="width: 30%; margin-right: 10px; display: inline-block;">
-<img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/StockView.png" alt="Invoice Management 2" style="width: 30%; margin-right: 10px; display: inline-block;">
-<img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/accountsfeatures.png" alt="Invoice Management 3" style="width: 30%; display: inline-block;">
+<div style="display: flex; justify-content: space-around;">
+    <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/sales-Feature.png" alt="Invoice Management 1" style="width: 30%;">
+    <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/StockView.png" alt="Invoice Management 2" style="width: 30%;">
+    <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/accountsfeatures.png" alt="Invoice Management 3" style="width: 30%;">
+</div>
 
 - **AJAX Dynamic Data Fetching**: Fetch client and product details dynamically while creating or editing invoices.`
 - **Print Functionality**: Print invoices with a click of a button.
-<img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/PrintView.png" alt="Print View" style="width: 50%; height:40%;">
+<img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/PrintView.png" alt="Print View" style="width: auto; height: 30%;">
 ## Installation
 
 ### Docker Setup
