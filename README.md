@@ -20,10 +20,24 @@ This project is a **Laravel-based Invoice Management System** designed to help u
 ## Features
 
 - **Invoice Creation and Management**: Easily create, update, and manage invoices for clients.
+  ![Invoice Images](https://github.com/Aya-Sherif/Invoices_System/blob/a5315e1bab2b737ae3c4baa6aa2464f1457da832/ReadMePhotos/NewInvoice.png) ![Invoices Display](https://github.com/Aya-Sherif/Invoices_System/blob/a5315e1bab2b737ae3c4baa6aa2464f1457da832/ReadMePhotos/invoicesDisplay.png)
 - **Partial Payments**: Manage partial payments and automatically update client balances.
+  
 - **Role-based Access Control**: Admins have full access, while sales users can only view and manage invoices.
+  
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="https://github.com/Aya-Sherif/Invoices_System/blob/21d162fbf5d054c921d8acd663aef6f0e0dec81c/ReadMePhotos/Screenshot%202024-10-04%20182543.png" alt="Stock View" style="width: auto; margin-right: 10px;">
+
+  <img src="https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/sales-Feature.png" alt="Sales Feature" style="width: 30%; margin-right: 10px;">
+  
+  <img src="https://github.com/Aya-Sherif/Invoices_System/blob/21d162fbf5d054c921d8acd663aef6f0e0dec81c/ReadMePhotos/accountsfeatures.png" alt="Accounts Features" style="width: 30%;">
+
+</div>
+
 - **AJAX Dynamic Data Fetching**: Fetch client and product details dynamically while creating or editing invoices.`
 - **Print Functionality**: Print invoices with a click of a button.
+<img src="https://github.com/Aya-Sherif/Invoices_System/blob/195303d6807da3dab3aa083ce8b3532f45f33681/ReadMePhotos/PrintView.png" alt="Print View" style="width: auto; height: 30%;">
 
 ## Installation
 
@@ -48,8 +62,17 @@ To run the application using Docker, ensure that Docker is installed on your mac
    ```bash
    docker-compose up --build
    ```
-
-4. **Run database migrations**:
+4. **Set up the environment file**:
+   
+   - Copy `.env.example` to `.env` and update the environment variables:
+     
+     ```bash
+     cp .env.example .env
+     ```
+   
+   - Configure your database, mail, and other settings in the `.env` file.
+     
+5. **Run database migrations**:
    
    After starting the container, you need to run the migrations to set up your database. Open another terminal window and execute:
    
@@ -138,8 +161,9 @@ In the production environment, the register page is disabled, but if you're runn
 
 Here are some screenshots of the application:
 
-
-
+![Products](https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/Products.png)
+![Add Product](https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/addProduct.png)
+![User Messages](https://github.com/Aya-Sherif/Invoices_System/blob/825ebde9e95ac89fbd090f410ccb3c4d40ca76a4/ReadMePhotos/messages.png)
 ## Contributing
 
 If you would like to contribute to this project, please fork the repository and submit a pull request with your changes.
