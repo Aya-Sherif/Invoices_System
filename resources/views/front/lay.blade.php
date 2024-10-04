@@ -47,7 +47,7 @@
 
 
 
-
+.
                             <li class="nav-item me-4 text-end">
                                 <a class="nav-link " href="#">الصفحة الرئيسية </a>
                             </li>
