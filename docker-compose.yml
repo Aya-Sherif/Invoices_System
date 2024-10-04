@@ -29,7 +29,7 @@ services:
     volumes:
       - db_data:/var/lib/mysql  # Defining a named volume for MySQL data
     ports:
-      - "3306:3306"
+      - "3307:3306"
 
   phpmyadmin:
     image: phpmyadmin/phpmyadmin:latest
