@@ -36,7 +36,7 @@
       <form class="row g-3 text-end" method="POST" action="{{ route('contact.store') }}">
         @csrf
         <div class="col-md-6">
-            <input type="text" class="form-control" name="name" placeholder="الأسم" required>
+            <input type="text" class="form-control" name="name" placeholder="الاسم" required>
         </div>
         <div class="col-md-6">
             <input type="text" class="form-control" name="phone" placeholder="رقم الهاتف" required>
