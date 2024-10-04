@@ -9,7 +9,7 @@
         <div class="col-lg-4">
           <i class="fa-solid fa-mobile-screen fs-2"></i>
           <h3 class="my-3 "> رقم الهاتف</h3>
-          <p>+2 01060200036</p>
+          <p>+20 1060200036</p>
         </div>
         <div class="col-lg-4">
           <a href="https://mail.google.com/mail/u/0/#search/smartplast18%40gmail.com"><i class="fa-solid fa-envelope fs-2"></i></a>
