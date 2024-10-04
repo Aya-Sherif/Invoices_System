@@ -62,8 +62,17 @@ To run the application using Docker, ensure that Docker is installed on your mac
    ```bash
    docker-compose up --build
    ```
-
-4. **Run database migrations**:
+4. **Set up the environment file**:
+   
+   - Copy `.env.example` to `.env` and update the environment variables:
+     
+     ```bash
+     cp .env.example .env
+     ```
+   
+   - Configure your database, mail, and other settings in the `.env` file.
+     
+5. **Run database migrations**:
    
    After starting the container, you need to run the migrations to set up your database. Open another terminal window and execute:
    
