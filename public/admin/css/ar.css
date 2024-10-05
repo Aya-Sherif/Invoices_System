@@ -73,50 +73,50 @@ html, body {
 .main_sidebar_wrapper ul span {
     margin: 0 0 0 10px;
 } */
-@font-face {
-    font-family: "js-flat";
-    src: url('../fonts/JF-Flat-regular.eot');
-    src: url('../fonts/JF-Flat-regular.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/JF-Flat-regular.svg#JF Flat Regular') format('svg'),
-         url('../fonts/JF-Flat-regular.woff') format('woff'),
-         url('../fonts/JF-Flat-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
+/* Use San Francisco and other widely supported fonts */
 html, body {
     direction: rtl;
-    font-family: "js-flat", "Helvetica", sans-serif;
-    -webkit-font-smoothing: antialiased; /* Smooth font rendering */
-    text-rendering: optimizeLegibility; /* Better font rendering */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+    word-break: keep-all;
+    overflow-wrap: normal;
 }
 
+/* Float right for RTL languages */
 .bring_right {
     float: right;
 }
 
+/* Float left */
 .bring_left {
     float: left;
 }
 
+/* Text alignment for right-to-left languages */
 .right_text {
     text-align: right;
 }
 
+/* Left-aligned text */
 .left_text {
     text-align: left !important;
 }
 
-.checkbox input[type="checkbox"], .checkbox-inline input[type="checkbox"],
-.radio input[type="radio"], .radio-inline input[type="radio"] {
+/* Adjustments for checkbox and radio inputs */
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"],
+.radio input[type="radio"],
+.radio-inline input[type="radio"] {
     margin-right: -20px;
 }
 
-.checkbox-inline, .radio-inline {
+/* Inline checkboxes and radio buttons padding */
+.checkbox-inline,
+.radio-inline {
     padding-right: 20px;
 }
 
+/* Sidebar positioning */
 .main_sidebar {
     right: 0;
 }
@@ -141,25 +141,17 @@ html, body {
     left: -300px;
 }
 
+/* Breadcrumbs styling */
 .home_pass ul li {
     text-align: right !important;
 }
 
+/* Tabs container styling */
 .content_tabs_container > ul li {
     float: right;
 }
 
+/* Sidebar wrapper styling */
 .main_sidebar_wrapper ul span {
     margin: 0 0 0 10px;
 }
-
-/* New iOS Fixes */
-*, *::before, *::after {
-    box-sizing: border-box; /* Ensures padding and borders don't affect element's width */
-    word-wrap: break-word; /* Prevents word overflow */
-}
-
-body {
-    -webkit-text-size-adjust: 100%; /* Prevents automatic font size adjustment */
-}
-
