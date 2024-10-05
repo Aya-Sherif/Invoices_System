@@ -25,11 +25,6 @@
     <!-- Select2 JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support -->
-    <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
 </head>
 
 <body>
@@ -44,8 +39,8 @@
                 <span class="glyphicon glyphicon-menu-hamburger bring_left open_close_menu" data-toggle="tooltip"
                     data-placement="right" title="فتح/إغلاق القائمة"></span>
             </div>
-            {{-- 
-            Uncomment this block if needed for additional header buttons 
+            {{--
+            Uncomment this block if needed for additional header buttons
             <div class="col-sm-3 col-xs-12 head_buttons_area bring_right hidden-xs">
                 <div class="inline-block messages bring_right">
                     <span class="glyphicon glyphicon-envelope" data-toggle="tooltip" data-placement="left"
@@ -134,20 +129,20 @@
                         </li>
                     @endif
 
-                
+
                     <!-- Logout Item -->
                     <li>
                         <span class="glyphicon glyphicon-log-out"></span>
                         <a href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
                             تسجيل الخروج
                         </a>
-                
+
                         <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                             @csrf
                         </form>
                     </li>
                 </ul>
-                
+
             </div>
         </div>
         <!-- End Sidebar -->
