@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Http\Requests\ProductDetailsRequest;
+use App\Models\Product;
 use App\Models\ProductSize;
 use Illuminate\Http\Request;
 
@@ -22,14 +23,20 @@ class ProductDetailsService
     public function updateProductSize(ProductDetailsRequest $request, string $id)
     {
         $productSize = ProductSize::findOrFail($id);
-        $productSize->update([
-            'size' => $request->input('المقاس'),
-            'price' => $request->input('السعر'),
-            'discount_percentage' => $request->input('نسبة_الخصم'),
-            'quantity' => $request->input('الكميه'),
-        ]);
+        // dd($productSize);
+        $productName=Product::findOrFail($productSize->product_id);
+        $productName->update([
+            'name'=>$request->input('اسم_المنتج')        ]);
+            $productSize->update([
+                'size' => $request->input('المقاس'),
+                'price' => $request->input('السعر'),
+                'discount_percentage' => $request->input('نسبة_الخصم'),
+                'quantity' => $request->input('الكميه'),
+            ]);
+            // dd($productName);
+
     }
-   
+
 
     public function updateProductQuantity(string $id, Request $request)
     {

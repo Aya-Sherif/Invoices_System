@@ -27,7 +27,7 @@
                     <div class="form-group">
                         <label for="input0" class="col-sm-2 control-label bring_right left_text">اسم المنتج</label>
                         <div class="col-sm-10">
-                            <input type="text" class="form-control" id="input0" name="اسم_المنتج" placeholder="اسم المنتج" value="{{ $product->product->name}}" disabled>
+                            <input type="text" class="form-control" id="input0" name="اسم_المنتج" placeholder="اسم المنتج" value="{{ $product->product->name}}" >
                         </div>
                     </div>
 
