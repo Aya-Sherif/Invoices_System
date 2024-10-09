@@ -25,8 +25,8 @@
                 <tbody>
                   @foreach($productDetails->where('product_id', $product->id) as $detail)
                   <tr>
-                      <td>{{ $detail->price }} جنيه</td>
-                      <td>{{ $detail->size }} مم</td>
+                      <td> جنيه {{ $detail->price }} </td>
+                      <td> مم {{ $detail->size }} </td>
                   </tr>
                   @endforeach
                 </tbody>
