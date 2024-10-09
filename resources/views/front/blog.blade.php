@@ -18,15 +18,15 @@
               <table class="table table-bordered text-center product-details-table">
                 <thead class="table-primary">
                   <tr>
-                    <th>المقاس</th>
-                    <th>السعر</th>
+                      <th>السعر</th>
+                      <th>المقاس</th>
                   </tr>
                 </thead>
                 <tbody>
                   @foreach($productDetails->where('product_id', $product->id) as $detail)
                   <tr>
-                    <td>{{ $detail->size }} مم</td>
-                    <td>{{ $detail->price }} جنيه</td>
+                      <td>{{ $detail->price }} جنيه</td>
+                      <td>{{ $detail->size }} مم</td>
                   </tr>
                   @endforeach
                 </tbody>
