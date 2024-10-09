@@ -45,16 +45,17 @@
                             <label for="input2" class="col-sm-2 control-label bring_right left_text">السعر</label>
                             <div class="col-sm-10">
                                 <input type="number" class="form-control" id="input2" name="السعر" placeholder="السعر"
-                                    value="{{ old('السعر') }}">
+                                       value="{{ old('السعر') }}" step="0.001">
                             </div>
                         </div>
+
 
                         <!-- Discount Percentage Field -->
                         <div class="form-group">
                             <label for="input3" class="col-sm-2 control-label bring_right left_text">نسبة الخصم</label>
                             <div class="col-sm-10">
                                 <input type="number" class="form-control" id="input3" name="نسبة_الخصم"
-                                    placeholder="نسبة الخصم" value="{{ old('نسبة_الخصم') }}">
+                                    placeholder="نسبة الخصم" value="{{ old('نسبة_الخصم') }}" step="0.001">
                             </div>
                         </div>
 

@@ -43,7 +43,7 @@
                     <div class="form-group">
                         <label for="input2" class="col-sm-2 control-label bring_right left_text">السعر</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="input2" name="السعر" placeholder="السعر" value="{{$product->price}}">
+                            <input type="number" class="form-control" id="input2" name="السعر" placeholder="السعر" value="{{$product->price}}" step="0.001">
                         </div>
                     </div>
 
@@ -51,7 +51,7 @@
                     <div class="form-group">
                         <label for="input3" class="col-sm-2 control-label bring_right left_text">نسبة الخصم</label>
                         <div class="col-sm-10">
-                            <input type="number" class="form-control" id="input3" name="نسبة_الخصم" placeholder="نسبة الخصم" value="{{ $product->discount_percentage}}" >
+                            <input type="number" class="form-control" id="input3" name="نسبة_الخصم" placeholder="نسبة الخصم" value="{{ $product->discount_percentage}}" step="0.001">
                         </div>
                     </div>
 
