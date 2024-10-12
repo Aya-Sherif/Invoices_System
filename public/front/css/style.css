@@ -100,12 +100,7 @@ h2 {
     border: 1px solid #d4d4d4;
     padding: 4px;
 }
-#message .row
-{
-  background-image: url(../images/sm_p_images/pngtree-sky-blue-background-design-template-image_599644.jpg);
-  background-position: center;
-  background-size: cover;
-}
+
 article {
     background: linear-gradient(
       to right,
@@ -115,6 +110,10 @@ article {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
+  }
+  span{
+    color: rgb(65, 71, 165);
+
   }
   #advantage h3 .span-name
 {

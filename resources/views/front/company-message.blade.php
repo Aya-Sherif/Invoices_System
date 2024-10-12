@@ -1,4 +1,13 @@
+<style>
+    #message .row
+{
+  background-image: url("{{ asset('front') }}/images/sm_p_images/p1.jpeg");
+  background-position: center;
+  background-size: cover;
+}
+    </style>
 <section id="message" class="py-3">
+
     <div class="container">
       <div class="row">
 
@@ -43,4 +52,4 @@
     </div>
   </section>
 
- 
+
