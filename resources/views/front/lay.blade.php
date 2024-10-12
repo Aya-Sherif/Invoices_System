@@ -47,7 +47,7 @@
 
 
 
-                            
+
                             <li class="nav-item me-4 text-end">
                                 <a class="nav-link " href="#">الصفحة الرئيسية </a>
                             </li>
@@ -57,6 +57,9 @@
                             <li class="nav-item me-4 text-end">
                                 <a class="nav-link" href="#message">رسالتنا </a>
                             </li>
+                            <li class="nav-item me-4 text-end">
+                                <a class="nav-link" href="#advantge"> مميزاتنا </a>
+                              </li>
                             <li class="nav-item me-4 text-end">
                                 <a class="nav-link" href="#blog"> منتجاتنا</a> </a>
                             </li>
@@ -75,10 +78,10 @@
             <div
                 class="content  top-50 start-50 translate-middle h-100  position-absolute d-flex justify-content-center align-items-center flex-column">
 
-
-                <h1 class="text-center my-3 fw-bold  ">سمارت بلاست</h1>
-                <h3 class="text-center"> أنت شريك النجاح بجد</h3>
-
+                <article>
+                    <h1 class="text-center">سمارت بلاست</h1>
+                    <h3 class="text-center">أنت شريك النجاح بجد  </h3>
+                  </article>
 
                 <div class="line mb-2"></div>
             </div>

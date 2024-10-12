@@ -59,14 +59,7 @@ header .overlay {
 header p {
     color: var(--main-color);
 }
-h1 {
-    font-size: 100px;
-    position: relative;
-    width: 100%;
 
-    color: var(--main-color);
-    font-weight: bold;
-}
 h3 {
     color: var(--main-color);
     font-weight: bolder;
@@ -107,7 +100,36 @@ h2 {
     border: 1px solid #d4d4d4;
     padding: 4px;
 }
+#message .row
+{
+  background-image: url(../images/sm_p_images/pngtree-sky-blue-background-design-template-image_599644.jpg);
+  background-position: center;
+  background-size: cover;
+}
+article {
+    background: linear-gradient(
+      to right,
+      hsl(98 100% 62%),
+      hsl(204 100% 59%)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+  #advantage h3 .span-name
+{
+  --main-color: #46c276;
+}
+h1 {
 
+    line-height: 1.1;
+
+    width: 100%;
+
+    font-size: 100px;
+
+     font-weight: bold;
+   }
 /* #portfolio .layer {
     opacity: 0;
     background-color: rgba(12, 35, 97, 0.8);

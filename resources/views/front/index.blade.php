@@ -3,6 +3,7 @@
 @section('content')
     @include('front.about_us')
     @include('front.company-message')
+    @include('front.advantages')
     @include('front.blog')
     @include('front.contact')
 @endsection
