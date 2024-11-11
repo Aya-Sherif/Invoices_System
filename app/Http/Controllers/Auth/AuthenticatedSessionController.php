@@ -15,6 +15,8 @@ class AuthenticatedSessionController extends Controller
      */
     public function create(): View
     {
+
+        // If the user is not authenticated, show the login page
         return view('auth.login');
     }
 
